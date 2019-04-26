@@ -14,9 +14,9 @@ import java.nio.file.{Files, Paths}
 
 /** Size, location and contents of the boot rom. */
 case class BootROMParams(
-  address: BigInt = 0x10000,
+  address: BigInt = 0x78000000,
   size: Int = 0x10000,
-  hang: BigInt = 0x10040,
+  hang: BigInt = 0x78000040,
   contentFileName: String)
 case object BootROMParams extends Field[BootROMParams]
 
